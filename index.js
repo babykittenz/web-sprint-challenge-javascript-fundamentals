@@ -66,9 +66,17 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
+  function animalNames(animalArray){
     /*Your Code Here*/
+    const displayArray = animalArray.map((animal_name) => {
+      return `name: ${animal_name.animal_name}, scientific: ${animal_name.scientific_name}`;
+    });
+    return displayArray;
+    
+    
   }
+
+  console.log(animalNames(zooAnimals));
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
