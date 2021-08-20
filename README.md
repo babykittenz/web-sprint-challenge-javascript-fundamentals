@@ -27,10 +27,24 @@ Edit this document to include your answers after each question. Make sure to lea
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
 2. Explain the difference between a callback and a higher order function.
+a higher order function takes a call back function to be invoked.
+higherOrder would be the higher order function while callback would be the callback function
+
+let higherOrder = (a,b,callback) => {
+    callback(a,b)
+};
 
 3. Explain what a closure is.
 
+closure occurs when a function reachs outside of its scope for context
+
 4. Describe the four principles of the 'this' keyword.
+
+
+1. Window Binding/Global Object Binding: Used when in the global scope. This will refer to window/console object. 
+2. Implicit Binding: When we use the dot call method. This refers to left of the dot.
+3. New Binding: When we use a constructor function. This refers to the specific instance of the object.
+4. Explicit Binding: When we use the .call or .apply methods. 
 
 5. Why do we need super() in an extended class?
 
