@@ -76,7 +76,7 @@ const zooAnimals = [
     
   }
 
-  console.log(animalNames(zooAnimals));
+  console.log('Topic 2 Request 1',animalNames(zooAnimals));
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
@@ -85,10 +85,17 @@ const zooAnimals = [
   For example: ['jackal, asiatic', .....]
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
+  function lowerCaseNames(data){
     /*Your Code Here*/
+
+    const lowerCaseArray = data.map((animal_name) => {
+      return animal_name.animal_name.toLowerCase();
+    })
+
+    return lowerCaseArray;
+
   }
-  
+  console.log('Topic 2 Request 2',lowerCaseNames(zooAnimals));
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
   The zoo is concerned about animals with a lower population count. 
