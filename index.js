@@ -28,7 +28,7 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(summationNumber) {
+let summation = (summationNumber) => {
   /*Your Code Here*/
   let counter = 0;
   let length = summationNumber;
@@ -66,7 +66,7 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(animalArray){
+  let animalNames = (animalArray) => {
     /*Your Code Here*/
     const displayArray = animalArray.map((animal_name) => {
       return `name: ${animal_name.animal_name}, scientific: ${animal_name.scientific_name}`;
@@ -85,7 +85,7 @@ const zooAnimals = [
   For example: ['jackal, asiatic', .....]
   */
 
-  function lowerCaseNames(data){
+  let lowerCaseNames = (data) => {
     /*Your Code Here*/
 
     const lowerCaseArray = data.map((animal_name) => {
@@ -102,7 +102,7 @@ const zooAnimals = [
   Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
   */
 
-  function lowPopulationAnimals(data){
+  let lowPopulationAnimals = (data) => {
     /*Your Code Here*/
     const lowerPopAnimals = data.filter((animal_name) => {
       return animal_name.population < 5;
@@ -121,7 +121,7 @@ const zooAnimals = [
   */
 
 
-  function USApop(data){
+  let USApop = (data) => {
     /*Your Code Here*/
     const totalPopulation = data.reduce((total, animal_name) => {
 
@@ -142,31 +142,35 @@ const zooAnimals = [
     * The consume function should return the invocation of cb, passing a and b into cb as arguments
   */
 
-  function consume(/*Your Code Here */){
-    /*Your Code Here */
-  }
+  let consume = (a, b, cb) => cb(a,b);
+  
+
+
  
   
   /* 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁 */
  // 🦁🦁🦁 Use add to return the sum of two numbers 🦁🦁🦁
   
-function add(/*Your Code Here */){
+let add = (a,b) => a + b;
     /*Your Code Here*/
-  }
+    
+  
 
 
 // 🦁🦁🦁 Use multiply to return the product of two numbers 🦁🦁🦁
   
-function multiply(/*Your Code Here */){
+let multiply = (a,b) => a * b;
+  
    /*Your Code Here */
-  }
+
+  
 
 
  // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
   
-function greeting(/*Your Code Here */){
-   return /*Your Code Here */
-  }
+let greeting = (first,last) =>
+   `Hello ${first} ${last}, nice to meet you!`;
+
   
   
   // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
