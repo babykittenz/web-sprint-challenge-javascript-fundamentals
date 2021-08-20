@@ -71,6 +71,7 @@ const zooAnimals = [
     const displayArray = animalArray.map((animal_name) => {
       return `name: ${animal_name.animal_name}, scientific: ${animal_name.scientific_name}`;
     });
+    
     return displayArray;
     
     

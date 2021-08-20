@@ -26,17 +26,46 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+
+.map: Creates a new array from an array applied to a set of rules.
+
+Example: Create a new array with the state name and population from the state array.
+
+    array.map(callback (value, index, array));
+
+    index and array are optional.
+    value is required
+
+
+
+.reduce: Simplifies a set of data down into one value.
+
+Example: We use this when we need to get a single value from all of the data such as total population in a states array. 
+
+    array.reduce.(callback (accumulator, value, index, array), 0);
+
+    0 would refer to the start point. 
+    index and array are optional.
+    accumulator and value are required.  
+
+.filter: This higher level function will go over each item in the array and only return what passes the logic test. We use this when we want to filter out specific data into a subset of the larger group.
+
+Example: Only return states with a population of this size.
+
 2. Explain the difference between a callback and a higher order function.
-a higher order function takes a call back function to be invoked.
+
+A higher order function takes a call back function to be invoked.
+
 higherOrder would be the higher order function while callback would be the callback function
 
 let higherOrder = (a,b,callback) => {
     callback(a,b)
 };
 
+
 3. Explain what a closure is.
 
-closure occurs when a function reachs outside of its scope for context
+Closure occurs when a function reaches outside of its scope for context.    
 
 4. Describe the four principles of the 'this' keyword.
 
@@ -47,6 +76,8 @@ closure occurs when a function reachs outside of its scope for context
 4. Explicit Binding: When we use the .call or .apply methods. 
 
 5. Why do we need super() in an extended class?
+
+super() will pass new attributes up to the constructor of the parent object.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
