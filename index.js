@@ -260,7 +260,7 @@ const cuboidTwo = new CuboidMakerTwo({
 
 //🦄🦄🦄 Test your volume and surfaceArea methods by uncommenting the logs below: 🦄🦄🦄
 console.log('Topic 4 Callback 1', cuboidTwo.volume()); // 100
-console.log('Topic 4 Callback 2',cuboidTwo.surfaceArea()); // 130
+console.log('Topic 4 Callback 2',cuboidTwo.surfaceArea()); // 130 
 
 
 
