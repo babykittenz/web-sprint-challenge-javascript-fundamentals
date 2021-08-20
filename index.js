@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+//  The nested function is reaching outside its scope to the global variable through closure. The function can reach out to the external variables but nothing can reach into the function.
 
 
 
